@@ -28,3 +28,9 @@ module "sftp" {
 | transfer_server_name | Transfer Server name | string | `` | yes |
 | transfer_server_user_name | Username for SFTP server | string | `` | yes |
 | transfer_server_ssh_key | SSH Key for transfer server user | string | `` | yes |
+
+## init
+
+terraform plan -var-file aaaa.tfvars
+
+sftp -i ~/.ssh/id_rsa doumo-transfer-user@XXX.server.transfer.ap-northeast-1.amazonaws.com
